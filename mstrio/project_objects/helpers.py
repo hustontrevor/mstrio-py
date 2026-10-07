@@ -148,7 +148,7 @@ def get_prompt_answer(
             return existing_answer
 
     # Check if user wants to use default for this specific prompt
-    if user_prompt_config and user_prompt_config.get('use_default', False):
+    if user_prompt_config and user_prompt_config.get('use_default', True):
         if default_answer is not None:
             return default_answer
         else:
